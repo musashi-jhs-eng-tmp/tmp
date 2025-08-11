@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>武蔵中 英語学習アプリ（試作0）</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 220px;
+      padding: 1.2rem;
+      text-align: center;
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card-icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+    }
+
+    .card-description {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>武蔵中　英語学習アプリ（試作0）</header>
+
+  <div class="menu-container">
+    <div class="card" onclick="location.href='tango4.html'">
+      <div class="card-icon">📘</div>
+      <div class="card-title">単語学習</div>
+      <div class="card-description">反復で語彙力UP！</div>
+    </div>
+
+    <div class="card" onclick="location.href='chat0.html'">
+      <div class="card-icon">💬</div>
+      <div class="card-title">会話練習</div>
+      <div class="card-description">実践的な英会話を体験</div>
+    </div>
+
+    <div class="card" onclick="location.href='hatuon0.html'">
+      <div class="card-icon">🔊</div>
+      <div class="card-title">発音練習</div>
+      <div class="card-description">音声で発音チェック</div>
+    </div>
+
+    <div class="card" onclick="location.href='dokkai1.html'">
+      <div class="card-icon">📖</div>
+      <div class="card-title">長文読解</div>
+      <div class="card-description">読解力を鍛えよう</div>
+    </div>
+  </div>
+
+</body>
+</html>
